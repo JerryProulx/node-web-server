@@ -64,6 +64,13 @@ app.get('/bad', (req, res)=>{
   })
 });
 
+app.get('/projects', (req, res)=>{
+  res.render('projects', {
+    pageTitle: 'Projects Page',
+    welcomeMessage: 'Welcome to the projects page son',
+  });
+});
+
 app.listen(port, () => {
   console.log('server listening');
 });
